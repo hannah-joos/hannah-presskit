@@ -104,7 +104,7 @@
       font-weight: 400;
       color: var(--blue-light);
       letter-spacing: .05em;
-      margin-bottom: 1.2rem;
+      margin-bottom: .4rem;
     }
     .hero-company {
       display: inline-flex;
@@ -115,7 +115,20 @@
       letter-spacing: .18em;
       text-transform: uppercase;
       color: rgba(255,255,255,.4);
+      margin-bottom: .9rem;
     }
+    .hero-linkedin {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      color: var(--blue-light);
+      font-size: .8rem;
+      font-weight: 500;
+      text-decoration: none;
+      opacity: .75;
+      transition: opacity .2s;
+    }
+    .hero-linkedin:hover { opacity: 1; }
 
     /* ── Sections ───────────────────────────────────────────── */
     section { padding: 4rem 0; }
@@ -367,7 +380,10 @@
      ═══════════════════════════════════════════════════════ -->
 <header>
   <div class="container header-inner">
-    <span class="header-name">Dr. Hannah Joos</span>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <img src="https://cdn.brandfetch.io/feverup.com/w/400/h/400/symbol?c=1idBMgSD4XrzGhGKeMN" alt="Fever" style="height:28px;width:auto;filter:brightness(0) invert(1);opacity:.9;">
+      <span class="header-name">Dr. Hannah Joos</span>
+    </div>
     <div class="lang-toggle">
       <button class="lang-btn active" data-lang="en">EN</button>
       <button class="lang-btn"        data-lang="de">DE</button>
@@ -386,7 +402,13 @@
       <span class="i18n" data-en="General Manager DACH"
                          data-de="Geschäftsführerin DACH"></span>
     </p>
-    <span class="hero-company">Fever</span>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:.5rem;">
+      <span class="hero-company">Fever</span>
+      <a href="https://www.linkedin.com/in/hannahjoos/" target="_blank" rel="noopener" class="hero-linkedin">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        linkedin.com/in/hannahjoos
+      </a>
+    </div>
   </div>
 </section>
 
